@@ -1,5 +1,7 @@
+/* Import Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Predefinições globais */
 *{
     margin: 0;
     padding: 0;
@@ -17,4 +19,18 @@ html{
 img{
     max-width: 100%;
     display: block;
+}
+
+/* Definindo cores */
+:root{
+    --branco: #ffffff;
+    --preto: #000000;
+    --cor-4: #161616;
+    --cor-3: #1F1F1F;
+    --cor-2: #CDCDCD;
+    --cor-1: #AAAAAA;
+    --cor-p1: #03A696;
+    --cor-p2: #053039;
+    --cor-p3: #011826;
+    --cor-p4: #F2ECE9;
 }
