@@ -120,6 +120,7 @@ header nav{
     padding: 40px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header nav ul{
     list-style: none;
@@ -137,16 +138,38 @@ header nav ul a:hover{
     transition: 0.3s;
 }
 
+/* MENU HAMBURGUER */
+.hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--branco);
+    cursor: pointer;
+    width: 30px;
+}
+.hamburguer::before,
+.hamburguer::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--branco);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+ 
 /* ESTILIZAÇÃO CONTEUDO MAIN */
 .conteudo-main{
     padding-top: 120px;
     padding-bottom: 180px;
 }
 .conteudo-main h1{
+    max-width: 584px;
     margin-bottom: 20px;
 }
 .conteudo-main p{
-    width: 527px;
+    max-width: 527px;
     margin-bottom: 40px;
 }
 .conteudo-main a{
@@ -184,11 +207,11 @@ header nav ul a:hover{
     margin-bottom: 10px;
 }
 .conteudo-sobre h2{
-    width: 400px;
+    max-width: 400px;
     margin-bottom: 20px;
 }
 .conteudo-sobre p{
-    width: 540px;
+    max-width: 540px;
     margin-bottom: 60px;
 }
 .diferenciais-sobre{
@@ -207,7 +230,7 @@ header nav ul a:hover{
 }
 .conteudo-sobre a{
     background-color: var(--preto);
-    max-width: 200px;
+    width: 200px;
     align-self: flex-end;
 }
 .conteudo-sobre a:hover{
@@ -226,11 +249,11 @@ header nav ul a:hover{
     margin-bottom: 10px;
 }
 .beneficios h2{
-    width: 580px;
+    max-width: 580px;
     margin-bottom: 20px;
 }
 .beneficios p{
-    width: 740px;
+    max-width: 740px;
     margin-bottom: 60px;
 }
 .cards-beneficios{
@@ -255,4 +278,63 @@ header nav ul a:hover{
 .card-beneficio p{
     width: 100%;
     margin-bottom: 0;
+}
+
+@media (max-width: 850px){
+    /* RESPONSIVIDADE NAV */
+    .hamburguer{
+        display: block;
+        z-index: 1;
+    }
+    header nav ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--cor-p3);
+        clip-path: circle(100px at 95% -20%);
+        transition: 1s ease-out;
+ 
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    .nav-list a{
+        font-size: 24px;
+        opacity: 0;
+    }
+    .nav-list li:nth-child(1) a{
+        transition: 0.5s 0.2s;
+    }
+    .nav-list li:nth-child(2) a{
+        transition: 0.5s 0.4s;
+    }
+    .nav-list li:nth-child(3) a{
+        transition: 0.5s 0.6s;
+    }
+    .nav-list li:nth-child(4) a{
+        transition: 0.5s 0.8s;
+    }
+    .nav.active .nav-list{
+        clip-path: circle(1500px at 95% -9%);
+        pointer-events: all;
+    }
+    .nav.active .nav-list a{
+        opacity: 1;
+    }
+    .nav.active .hamburguer{
+        position: fixed;
+        right: 20px;
+        border-top-color: transparent;
+    }
+    .nav.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+    .nav.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
 }
