@@ -34,14 +34,83 @@ img{
     --cor-p3: #011826;
     --cor-p4: #F2ECE9;
 }
+/* Componentes Cores */
+.branco{
+    color: var(--branco);
+}
+.preto{
+    color: var(--preto);
+}
+.cor-4{
+    color: var(--cor-4);
+}
+.cor-3{
+    color: var(--cor-3);
+}
+.cor-2{
+    color: var(--cor-2);
+}
+.cor-1{
+    color: var(--cor-1);
+}
+.cor-p1{
+    color: var(--cor-p1);
+}
+.cor-p2{
+    color: var(--cor-p2);
+}
+.cor-p3{
+    color: var(--cor-p3);
+}
+.cor-p4{
+    color: var(--cor-p4);
+}
 
-/* Componente container */
+/* Componentes */
 .container{
     box-sizing: border-box;
     max-width: 1400px;
     padding-left: 20px ;
     padding-right: 20px ;
     margin: auto;
+}
+.button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 8px 8px 8px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+    max-width: 200px;
+}
+
+
+/* Fontes */
+.font-xl{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.125;
+}
+.font-l{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.15;
+}
+.font-m-1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.font-m-2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* ESTILIZAÇÃO NAV */
+main{
+    background: url(../assets/images/hero-image.jpg) center center / cover no-repeat scroll;;
 }
 
 /* ESTILIZAÇÃO NAV */
@@ -57,12 +126,28 @@ header nav ul{
 }
 header nav ul a{
     text-decoration: none;
-    color: var(--preto);
-    font-family: "Inter", sans-serif;
+    color: var(--branco);
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 header nav ul a:hover{
     color: var(--cor-p1);
     transition: 0.3s;
 }
+
+/* ESTILIZAÇÃO CONTEUDO MAIN */
+.conteudo-main{
+    padding-top: 120px;
+    padding-bottom: 180px;
+}
+.conteudo-main h1{
+    margin-bottom: 20px;
+}
+.conteudo-main p{
+    width: 527px;
+    margin-bottom: 40px;
+}
+.conteudo-main a{
+    background-color: var(--cor-p1);
+}
+
