@@ -34,6 +34,7 @@ img{
     --cor-p3: #011826;
     --cor-p4: #F2ECE9;
 }
+
 /* Componentes Cores */
 .branco{
     color: var(--branco);
@@ -151,3 +152,49 @@ header nav ul a:hover{
     background-color: var(--cor-p1);
 }
 
+/* ESTILIZAÇÃO SEÇÃO SOBRE */
+.sobre-bg{
+    background-color: var(--cor-p4);
+}
+.sobre{
+    padding-block: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.video-sobre{
+    max-width: 100%;
+}
+.video-sobre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conteudo-sobre span{
+    display: block;
+    margin-bottom: 10px;
+}
+.conteudo-sobre h2{
+    width: 400px;
+    margin-bottom: 20px;
+}
+.conteudo-sobre p{
+    width: 540px;
+    margin-bottom: 60px;
+}
+.diferenciais-sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+}
+.diferencial h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.diferencial p{
+    max-width: 250px;
+}
+.conteudo-sobre a{
+    background-color: var(--preto);
+}
