@@ -181,7 +181,7 @@ header nav ul a:hover{
     max-width: 203px;
 }
 .conteudo-main a:hover{
-    background-color: var(--cor-p2);
+    background-color: #00796d;
 }
 
 /* ESTILIZAÇÃO SEÇÃO SOBRE */
@@ -284,6 +284,47 @@ header nav ul a:hover{
     width: 100%;
     margin-bottom: 0;
 }
+
+/* ESTILIZAÇÃO SEÇÃO BENEFICIOS */
+.newslatter-bg{
+    background-color: var(--preto);
+}
+.newslatter{
+    padding-block: 120px;
+    text-align: center;
+}
+.newslatter h2{
+    margin-bottom: 40px;
+}
+.input-newslatter{
+    font-size: .875rem;
+    font-weight: 500;
+    padding: 8px 8px 8px 20px;
+    background-color: var(--branco);
+    border-radius: 30px;
+    width: 360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-newslatter a{
+    display: block;
+    display: flex;
+    align-items: center;
+    background-color: #03A696;
+    border-radius: 30px;
+    padding-left: 12px;
+    text-decoration: none;
+    color: white;
+}
+.input-newslatter input{
+    border: none;
+    outline: none;
+}
+:-ms-input-placeholder {  
+    color: var(--cor-1);  
+ }
 
 @media (max-width: 850px){
     /* RESPONSIVIDADE NAV */
