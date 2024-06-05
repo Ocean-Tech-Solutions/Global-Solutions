@@ -30,7 +30,7 @@ img{
     --cor-2: #CDCDCD;
     --cor-1: #AAAAAA;
     --cor-p1: #03A696;
-    --cor-p2: #053039;
+    --cor-p2: #8AB0BF;
     --cor-p3: #011826;
     --cor-p4: #F2ECE9;
 }
@@ -101,11 +101,15 @@ img{
     font-weight: 500;
     line-height: 1.15;
 }
-.font-m-1{
+.font-m{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.font-p-1{
     font-size: 1rem;
     font-weight: 400;
 }
-.font-m-2{
+.font-p-2{
     font-size: 1rem;
     font-weight: 500;
 }
@@ -211,13 +215,14 @@ header nav ul a:hover{
     margin-bottom: 20px;
 }
 .conteudo-sobre p{
-    max-width: 540px;
+    max-width: 560px;
     margin-bottom: 60px;
 }
 .diferenciais-sobre{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 40px;
+    gap: 20px;
 }
 .diferencial h3{
     font-size: 1.25rem;
@@ -225,7 +230,7 @@ header nav ul a:hover{
     margin-bottom: 10px;
 }
 .diferencial p{
-    max-width: 250px;
+    max-width: 260px;
     margin-bottom: 0;
 }
 .conteudo-sobre a{
@@ -239,7 +244,7 @@ header nav ul a:hover{
 
 /* ESTILIZAÇÃO SEÇÃO BENEFICIOS */
 .beneficios-bg{
-    background-color: var(--cor-p2);
+    background-color: var(--cor-p3);
 }
 .beneficios{
     padding-block: 120px;
@@ -271,8 +276,8 @@ header nav ul a:hover{
     border-radius: 10px;
 }
 .card-beneficio h3{
-    font-size: 2rem;
-    line-height: 1.125;
+    font-size: 1.625rem;
+    line-height: 1.15;
     margin-bottom: 10px;
 }
 .card-beneficio p{
