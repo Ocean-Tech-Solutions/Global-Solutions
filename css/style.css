@@ -318,6 +318,9 @@ header nav ul a:hover{
     text-decoration: none;
     color: white;
 }
+.input-newslatter a{
+    background-color: #00796d;
+}
 .input-newslatter input{
     border: none;
     outline: none;
