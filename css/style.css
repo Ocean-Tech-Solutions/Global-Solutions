@@ -412,7 +412,7 @@ header nav ul a:hover{
     cursor: pointer;
     border: none;
     background-color: var(--cor-p1);
-    max-width: 187px;
+    max-width: 197px;
     padding: 16px 20px;
     font-family: "Montserrat", sans-serif;
 }
@@ -568,8 +568,8 @@ footer{
     .sobre{
         grid-template-columns: 1fr;
     }
-    .video-sobre{
-        max-height: 300px;
+    .video-sobre iframe{
+        height: 400px;
     }
 
     /* RESPONSIVIDADE BENEFICIOS */
